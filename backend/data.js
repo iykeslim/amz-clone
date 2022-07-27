@@ -17,7 +17,6 @@ const data = {
     ],
     products: [
         {
-            _id: '1',
             name: 'Red fitted T-shirt',
             category: 'Wears',
             image: '/images/product-1.jpg',
@@ -29,7 +28,6 @@ const data = {
             description: 'high quality products',
         },
         {
-            _id: '2',
             name: 'Smart Wrist Watch',
             category: 'Wrist Watch',
             image: '/images/product-7.jpg',
@@ -41,7 +39,6 @@ const data = {
             description: 'high quality products',
         },
         {
-            _id: '3',
             name: 'Summer Wears',
             category: 'Footwears',
             image: '/images/product-3.jpg',
@@ -52,8 +49,7 @@ const data = {
             numReviews: 8,
             description: 'high quality products',
         },
-        {
-            _id: '4',
+        { 
             name: 'Skin-Tight',
             category: 'Sports Wears',
             image: '/images/product-6.jpg',
@@ -65,7 +61,6 @@ const data = {
             description: 'high quality products',
         },
         {
-            _id: '5',
             name: 'Blue Bow-Tie',
             category: 'Neck-ties',
             image: '/images/product-8.jpg',
@@ -77,7 +72,6 @@ const data = {
             description: 'high quality products',
         },
         {
-            _id: '6',
             name: 'Couple-wears',
             category: 'Couple',
             image: '/images/product-5.jpg',
