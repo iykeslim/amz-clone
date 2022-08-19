@@ -20,7 +20,7 @@ export const isAuth = (req, res, next) => {
 // the next line will be using jwt to decrypt the token..
         jwt.verify(token, process.env.JWT_SECRET || 'somesecret', (err, decode) => {
             if(err){
-                req.status(401).send({message: 'Invalid Token'})
+                res.status(401).send({message: 'Invalid Token'})
             } else{
 // here i will use the 'decode parameter'which gives me access to the data stored up there  in the jwt.sign obj
 // about the user(will be stored in variable req.user below) and right after that we will call te 3rd parameter which is next 
@@ -29,7 +29,7 @@ export const isAuth = (req, res, next) => {
             }
         })
     } else {
-        req.status(401).send({ message: 'There is no Token' })
+        res.status(401).send({ message: 'There is no Token' })
 
     }
 }
